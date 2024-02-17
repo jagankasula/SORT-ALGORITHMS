@@ -35,5 +35,5 @@ To use this repository:
         tim_sort_time = [0.0, 0.1, 0.1, 0.3, 0.5, 0.6, 0.8, 1.0, 1.1, 1.3, 1.5, 1.7]
 4. To generate the plots for above mentioned comparision types uncomment the relevant code from line 50 in `Driver.py` file.
     - Sample plots:
-        ![Alt text](Images/plot_count.png)
-        ![Alt text](Images/plot_time.png)
+        - ![Alt text](Images/plot_count.png)
+        - ![Alt text](Images/plot_time.png)
