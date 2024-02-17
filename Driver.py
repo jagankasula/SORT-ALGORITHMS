@@ -26,15 +26,15 @@ for size in DATA_SIZE:
 
     start_time  = time.time()
     insertion_sort_counts.append(insertion_sort(input[:]))
-    insertion_sort_time.append(round(time.time() - start_time, 8)*1000)
+    insertion_sort_time.append(round(time.time() - start_time, 4)*1000)
 
     start_time  = time.time()
     merge_sort_counts.append(merge_sort(input[:]))
-    merge_sort_time.append(round(time.time() - start_time, 8)*1000)
+    merge_sort_time.append(round(time.time() - start_time, 4)*1000)
 
     start_time  = time.time()
     tim_sort_counts.append(tim_sort(input[:]))
-    tim_sort_time.append(round(time.time() - start_time, 8)*1000)
+    tim_sort_time.append(round(time.time() - start_time, 4)*1000)
 
 
 print(f'insertion_sort_counts = {insertion_sort_counts}')
@@ -47,29 +47,29 @@ print(f'tim_sort_time = {tim_sort_time}')
 
 #%%
 # Plotting the time complexity graph w.r.t comparision & swap counts.
-import matplotlib.pyplot as plt
-plt.plot(DATA_SIZE, insertion_sort_counts, label='Insertion Sort')
-plt.plot(DATA_SIZE, merge_sort_counts, label='Merge Sort')
-plt.plot(DATA_SIZE, tim_sort_counts, label='Tim Sort')
-plt.xlabel('Array Size')
-plt.ylabel('Count')
-plt.title('Time Complexity of Sorting Algorithms w.r.t COUNTS')
-plt.legend()
-plt.grid(True)
-plt.show()
+# import matplotlib.pyplot as plt
+# plt.plot(DATA_SIZE, insertion_sort_counts, label='Insertion Sort')
+# plt.plot(DATA_SIZE, merge_sort_counts, label='Merge Sort')
+# plt.plot(DATA_SIZE, tim_sort_counts, label='Tim Sort')
+# plt.xlabel('Array Size')
+# plt.ylabel('Count')
+# plt.title('Time Complexity of Sorting Algorithms w.r.t COUNTS')
+# plt.legend()
+# plt.grid(True)
+# plt.show()
 
-#%%
-# Plotting the time complexity graph w.r.t execution time.
-import matplotlib.pyplot as plt
-plt.plot(DATA_SIZE, insertion_sort_time, label='Insertion Sort')
-plt.plot(DATA_SIZE, merge_sort_time, label='Merge Sort')
-plt.plot(DATA_SIZE, tim_sort_time, label='Tim Sort')
-plt.xlabel('Array Size')
-plt.ylabel('Time(ms)')
-plt.title('Time Complexity of Sorting Algorithms w.r.t EXECUTION TIME')
-plt.legend()
-plt.grid(True)
-plt.show()
+# #%%
+# # Plotting the time complexity graph w.r.t execution time.
+# import matplotlib.pyplot as plt
+# plt.plot(DATA_SIZE, insertion_sort_time, label='Insertion Sort')
+# plt.plot(DATA_SIZE, merge_sort_time, label='Merge Sort')
+# plt.plot(DATA_SIZE, tim_sort_time, label='Tim Sort')
+# plt.xlabel('Array Size')
+# plt.ylabel('Time(ms)')
+# plt.title('Time Complexity of Sorting Algorithms w.r.t EXECUTION TIME')
+# plt.legend()
+# plt.grid(True)
+# plt.show()
     
 
 
