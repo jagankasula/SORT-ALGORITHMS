@@ -33,7 +33,8 @@ To use this repository:
         insertion_sort_time = [0.0, 0.1, 0.3, 1.0, 2.1, 3.9, 6.4, 8.9, 12.5, 15.1, 19.5, 24.6]
         merge_sort_time = [0.0, 0.1, 0.4, 1.6, 3.7, 6.4, 10.3, 16.2, 18.7, 22.1, 26.9, 35.3]
         tim_sort_time = [0.0, 0.1, 0.1, 0.3, 0.5, 0.6, 0.8, 1.0, 1.1, 1.3, 1.5, 1.7]
-4. To generate the plots for above mentioned comparision types uncomment the relevant code from line 50 in `Driver.py` file.
+4. A random input array will be generated based on the `SEED` value. Modiify this `SEED` value in the `Driver.py` file to test with a different input.
+5. To generate the plots for above mentioned comparision types uncomment the relevant code from line 50 in `Driver.py` file.
     - Sample plots:
         - ![Alt text](Images/plot_count.png)
         - ![Alt text](Images/plot_time.png)
